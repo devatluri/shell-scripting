@@ -14,10 +14,10 @@ VALIDATE(){
     #$1 --> it will receive arugument1, $2 is argument 2
     if [ $? -ne 0 ]
     then
-        echo "$2 .... $R FAILURE $N"
+        echo -e "$2 .... $R FAILURE $N"
         exit 1
     else
-        echo "$2 .... $G SUCCESS $N"
+        echo -e "$2 .... $G SUCCESS $N"
     fi
 }
 
