@@ -13,7 +13,7 @@ Y="\e[33m"
 DISK_USAGE=$(df -hT)
 DISK_USAGE_THRESHOLD=1
 message=""
-echo $DISK_USAGE
+echo "$DISK_USAGE \n"
 
 # while IFS= read line
 # do
