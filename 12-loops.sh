@@ -27,6 +27,7 @@ VALIDATE()
         echo -e "Installing $2 ..$R FAILURE $N"
     else    
         echo -e "Installing $2 ... $G SUCCESS $N"
+    fi
 }
 #all arguments are in $@
 for i in $@
