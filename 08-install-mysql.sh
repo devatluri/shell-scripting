@@ -19,3 +19,13 @@ then
 else
     echo "Installation of MySQL is SUCCESS"
 fi
+
+yum install postfix -y
+
+if [ $? ne 0 ]
+then
+    echo "Installation of POSTFIX is ERROR"
+    exit 1
+else
+    echo "Installation of POSTFIX is SUCCESS"
+fi
