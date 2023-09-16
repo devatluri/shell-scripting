@@ -14,6 +14,8 @@ DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesystem' )
 DISK_USAGE_THRESHOLD=1
 message=""
 echo "$DISK_USAGE \n"
+usage=$(echo $DISK_USAGE | awk '{print $6}' | cut -d % -f1)
+echo "$usage"
 
 # while IFS= read line
 # do
