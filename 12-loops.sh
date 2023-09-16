@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE=$(date +%F)
-mkdir /home/centos/shellscript-logs
+mkdir -p /home/centos/shellscript-logs
 LOGSDIR=/home/centos/shellscript-logs
 SCRIPT_NAME=$0
 USERID=$(id -u)
