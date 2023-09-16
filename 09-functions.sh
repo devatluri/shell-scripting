@@ -3,16 +3,21 @@
 SCRIPT_NAME=$0
 DATE=$(date +%F)
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
-#TO intall MySQL
 
+#COLORS
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
+#TO intall MySQL
 VALIDATE(){
     #$1 --> it will receive arugument1, $2 is argument 2
     if [ $? -ne 0 ]
     then
-        echo "$2 .... FAILURE"
+        echo "$2 .... $R FAILURE $N"
         exit 1
     else
-        echo "$2 .... SUCCESS"
+        echo "$2 .... $G SUCCESS $N"
     fi
 }
 
