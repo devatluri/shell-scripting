@@ -32,8 +32,8 @@ fi
 #This function should validate previous command and inform user SUCCESS or FAILURE
 
 
-yum install mydsfsql -y &>>$LOGFILE
+yum install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL"
 
-yum install postfdfix -y &>>$LOGFILE
+yum install postfix -y &>>$LOGFILE
 VALIDATE $? "Installing POSTFIX"
