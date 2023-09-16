@@ -2,6 +2,6 @@
 
 #Create a loop
 for i in {1..100}
-    do
+do
     echo $i
-    done
+done
