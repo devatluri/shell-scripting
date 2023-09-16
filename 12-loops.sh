@@ -21,7 +21,7 @@ fi
 #Validation
 
 VALIDATE(){
-    if [$1 -ne 0]
+    if [$1 -ne 0];
     then
         echo -e "Installing $2 ..$R FAILURE $N"
     else    
