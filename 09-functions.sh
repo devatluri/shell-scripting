@@ -19,7 +19,7 @@ VALIDATE(){
         exit 1
     else
         echo "Installation .... SUCCESS"
-fi
+    fi
 }
 
 yum install mysql -y
