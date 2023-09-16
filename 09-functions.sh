@@ -7,7 +7,7 @@ LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
 VALIDATE(){
     #$1 --> it will receive arugument1, $2 is argument 2
-    if [ $? ne 0 ]
+    if [ $? -ne 0 ]
     then
         echo "$2 .... FAILURE"
         exit 1
